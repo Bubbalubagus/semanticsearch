@@ -43,7 +43,7 @@ combined_Names = ', '.join(set([doc.meta['name'] for doc in result["documents"]]
 import openai
 
 # Load your API key from an environment variable or secret management service
-openai.api_key = "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"
+openai.api_key = ""
 prompt = "You are a friendly and verbose assistant, given this information retrieved from a database of documents:" + combined_content + "\n Respond to this question:" + query + "\nYour response:"
 model = "text-davinci-003"
 
